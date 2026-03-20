@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+const PORT = 3000;
 app.get('/leads',(req, res) => {
     res.json(
         {
@@ -10,4 +11,4 @@ app.get('/leads',(req, res) => {
     );
 });
 
-app.listen(PORT,() => {console.log(`Server is running on port ${PORT}`)});
+app.listen(PORT,() => {console.log(`Server is running on port ${PORT}`)});;
